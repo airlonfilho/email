@@ -1,10 +1,8 @@
 const express = require('express');
 const server = express();
-const cors = require("cors");
 var nodemailer = require("nodemailer");
 
 server.use(express.json());
-server.use(cors());
 
 var remetente = nodemailer.createTransport({
     host: "smtp.gmail.com",
